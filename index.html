@@ -28,14 +28,19 @@ $(function() {
 });
 </script>
 
+<script>
+document.getElementById("time").innerHTML = Date();
+</script>
+
 
 		</head>
 		<body class="landing">
 
 
 			<header id="header">
-				<h1></h1>
-				</header> 
+				<p id="time"></p>
+
+					</header> 
 				<section id="banner">
 					<h2>Do you want to Play?</h2>
 					<p>Wait, its coming soon...</p>
@@ -85,14 +90,14 @@ $(function() {
 							<form action="https://docs.google.com/forms/d/1cpPgacz9ldakQKqDb4rAHMrfZ9yber2GjnE7lHrwtTs/formResponse" id="ss-form" target="_self" onsubmit="" method="POST">
 									<div class="row uniform 50%">
 										<div class="6u 12u$(xsmall)">
-											<input  type="text" name="entry.1788675638"  id="entry_1788675638" dir="auto" aria-label="Name  " title=""  value="" placeholder="Name" />
+											<input required type="text" name="entry.1788675638"  id="entry_1788675638" dir="auto" aria-label="Name  " title=""  value="" placeholder="Name" />
 										</div>
 										<div class="6u$ 12u$(xsmall)">
-											<input  name="entry.2013559501" value="" class="ss-q-short" id="entry_2013559501" dir="auto" aria-label="Email  " title="" placeholder="Email" type = "Email"/>
+											<input required name="entry.2013559501" value="" class="ss-q-short" id="entry_2013559501" dir="auto" aria-label="Email  " title="" placeholder="Email" type = "Email"/>
 										</div>
 										
 										<div class="12u$">
-											<textarea   name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+											<textarea required  name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
 										</div>
 										<div class="12u$">
 											<ul class="actions">
